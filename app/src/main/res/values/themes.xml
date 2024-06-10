@@ -1,0 +1,22 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--Themes-->
+<resources>
+  <!--Colors theme-->
+  <style
+    parent = "Theme.AppCompat.Light.NoActionBar"
+    name = "Theme.NumberplateScanner"
+  >
+    <item name = "android:statusBarColor">@color/primary_900</item>
+  </style>
+  <!--EditText theme-->
+  <style name = "EditText" parent = "Theme.AppCompat.Light.NoActionBar">
+    <item name = "colorControlActivated">@color/primary_900</item>
+    <item name = "colorControlHighlight">@color/primary_900</item>
+    <item name = "colorControlNormal">@color/primary_900</item>
+  </style>
+  <!--Dialog box theme-->
+  <style name = "DialogTheme" parent = "Theme.AppCompat.Light.Dialog.Alert">
+    <item name = "shapeAppearanceOverlay">@drawable/popup_bg</item>
+    <item name = "android:background">@drawable/popup_bg</item>
+  </style>
+</resources>

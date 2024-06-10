@@ -1,0 +1,21 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<resources>
+  <color name = "transparent">#00000000</color>
+  <color name = "primary_400">#8133F1</color>
+  <color name = "primary_200">#b78af7</color>
+  <color name = "primary_900">#290064</color>
+  <color name = "primary_800">#360083</color>
+  <color name = "primary_50">#efe6fd</color>
+  <color name = "neutral_10">#262626</color>
+  <color name = "neutral_12">#141414</color>
+  <color name = "popup_bg">#ffffffeb</color>
+  <color name = "neutral_1">#ffffff</color>
+  <color name = "neutral_2">#fcfcfc</color>
+  <color name = "neutral_4">#f0f0f0</color>
+  <color name = "neutral_5">#d9d9d9</color>
+  <color name = "neutral_6">#bfbfbf</color>
+  <color name = "neutral_7">#8c8c8c</color>
+  <color name = "neutral_8">#595959</color>
+  <color name = "neutral_9">#454545</color>
+  <color name = "black_900">#000000</color>
+</resources>

@@ -1,0 +1,64 @@
+<!--App texts values-->
+<resources>
+  <string name = "upload_success_message">Votre image a été envoyée sans problème.</string>
+  <string name = "quit_message">Souhaitez-vous vraiment quitter l’application ?</string>
+  <string name = "settings_save_success">Paramètres sauvegardés avec succès !</string>
+  <string name = "no_change_detected">Aucune modification n\'a été effectuée.</string>
+  <string name = "tutorial_title">Scan d’une plaque d’immatriculation</string>
+  <string name = "copyright">Copyright © 2024 – 2025 CA Cybernet</string>
+  <string name = "retrieve_error_title">Erreur de récupération</string>
+  <string name = "app_version">version v0.1.4 • build 10</string>
+  <string name = "load_error_title">Erreur de chargement</string>
+  <string name = "select_image">Sélectionner une image</string>
+  <string name = "upload_success_title">Envoye réussi</string>
+  <string name = "resolution">412pixels x 2000pixels</string>
+  <string name = "upload_error_title">Envoye échoué</string>
+  <string name = "start_camera">Démarrer la caméra</string>
+  <string name = "progressing">Envoye en cours…</string>
+  <string name = "load_image">Charger une image</string>
+  <string name = "app_name">Numberplate Scanner</string>
+  <string name = "time_value">23h:09min:44s</string>
+  <string name = "description">Description</string>
+  <string name = "another_image">Une autre</string>
+  <string name = "date_value">25/04/2024</string>
+  <string name = "weight_value">1.95 MB</string>
+  <string name = "progress_percent">0%</string>
+  <string name = "settings">Paramètres</string>
+  <string name = "transfer">Transfert</string>
+  <string name = "api_link">Lien API</string>
+  <string name = "save">Sauvegarder</string>
+  <string name = "retry">Réessayer</string>
+  <string name = "cancel">Annuler</string>
+  <string name = "weight">Taille</string>
+  <string name = "home">Accueil</string>
+  <string name = "quit">Quitter</string>
+  <string name = "send">Envoyer</string>
+  <string name = "time">Temps</string>
+  <string name = "date">Date</string>
+  <string name = "ok">OK</string>
+  <string name = "settings_message">
+    Fournissez le lien API à contacter pour le transfert des images récupérées.
+  </string>
+  <string name = "detected_plates">
+    Nous avons détecté le(s) plaque(s) d\'immatriculation suivante(s): %s.
+  </string>
+  <string name = "no_platenumber">
+    Aucune voiture ou véhicule n\'a été trouvé(e) sur cette photo.
+  </string>
+  <string name = "load_error_message">
+    Assurez-vous que l\'image n\'est pas corrompu ou endommagée.
+  </string>
+  <string name = "upload_error_message">
+    Vérifiez votre réseau et assurez-vous d\'avoir une connexion internet
+    stable puis réessayer à nouveau.
+  </string>
+  <string name = "retrieve_error_message">
+    Impossible de récupérer et de traiter correctement les réponses émises
+    du serveur.
+  </string>
+  <string name = "tutorial_message">
+    Faites en sorte que l\'on puisse voire sur votre photo, le véhicule
+    accompagné de sa plaque d\'immatriculation et assurez-vous d’avoir
+    une image la plus nette que possible.
+  </string>
+</resources>

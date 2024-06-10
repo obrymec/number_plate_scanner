@@ -1,0 +1,71 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--Settings screen-->
+<LinearLayout
+  xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:background = "@drawable/popup_bg"
+  android:layout_height = "wrap_content"
+  android:layout_width = "match_parent"
+  android:orientation = "vertical"
+  android:paddingTop = "12dp"
+>
+  <!--Message-->
+  <LinearLayout
+    android:layout_height = "wrap_content"
+    android:layout_width = "match_parent"
+    android:layout_marginBottom = "16dp"
+    android:paddingHorizontal = "16dp"
+    android:orientation = "vertical"
+  >
+    <!--Text-->
+    <TextView
+      android:fontFamily = "@font/opensans_regular"
+      android:textColor = "@color/neutral_12"
+      android:layout_height = "match_parent"
+      android:text = "@string/quit_message"
+      android:layout_width = "match_parent"
+      android:gravity = "center"
+      android:textSize = "14sp"
+    />
+  </LinearLayout>
+  <!--Options-->
+  <LinearLayout
+    android:background = "@drawable/border_top"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:orientation = "horizontal"
+    android:padding = "0dp"
+  >
+    <!--Cancel button-->
+    <androidx.appcompat.widget.AppCompatButton
+      android:fontFamily = "@font/opensans_regular"
+      android:background = "@drawable/border_right"
+      android:textColor = "@color/primary_900"
+      android:layout_height = "match_parent"
+      android:paddingHorizontal = "6dp"
+      android:paddingVertical = "14dp"
+      android:text = "@string/cancel"
+      android:textAllCaps = "false"
+      android:layout_width = "0dp"
+      android:layout_weight = "1"
+      android:id = "@+id/cancel"
+      android:gravity = "center"
+      android:textSize = "15sp"
+    />
+    <!--Save button-->
+    <androidx.appcompat.widget.AppCompatButton
+      android:fontFamily = "@font/opensans_semibold"
+      android:background = "@color/transparent"
+      android:textColor = "@color/primary_900"
+      android:layout_height = "match_parent"
+      android:paddingHorizontal = "6dp"
+      android:paddingVertical = "14dp"
+      android:text = "@string/quit"
+      android:textAllCaps = "false"
+      android:layout_width = "0dp"
+      android:layout_weight = "1"
+      android:gravity = "center"
+      android:textSize = "15sp"
+      android:id = "@+id/quit"
+    />
+  </LinearLayout>
+</LinearLayout>

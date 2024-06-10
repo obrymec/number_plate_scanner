@@ -1,0 +1,78 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--Success screen-->
+<LinearLayout
+  xmlns:android = "http://schemas.android.com/apk/res/android"
+  android:background = "@drawable/popup_bg"
+  android:layout_height = "wrap_content"
+  android:layout_width = "match_parent"
+  android:orientation = "vertical"
+  android:paddingTop = "12dp"
+>
+  <!--Title-->
+  <TextView
+    android:fontFamily = "@font/opensans_semibold"
+    android:text = "@string/upload_success_title"
+    android:textColor = "@color/neutral_12"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:layout_marginBottom = "4dp"
+    android:gravity = "center"
+    android:textSize = "18sp"
+  />
+  <!--Message-->
+  <LinearLayout
+    android:layout_height = "wrap_content"
+    android:layout_width = "match_parent"
+    android:layout_marginBottom = "16dp"
+    android:paddingHorizontal = "16dp"
+    android:orientation = "vertical"
+  >
+    <!--Text-->
+    <TextView
+      android:text = "@string/upload_success_message"
+      android:fontFamily = "@font/opensans_regular"
+      android:textColor = "@color/neutral_12"
+      android:layout_height = "match_parent"
+      android:layout_width = "match_parent"
+      android:gravity = "center"
+      android:textSize = "14sp"
+    />
+    <!--Response-->
+    <TextView
+      android:fontFamily = "@font/opensans_regular"
+      android:textColor = "@color/neutral_12"
+      android:layout_height = "match_parent"
+      android:layout_width = "match_parent"
+      android:layout_marginTop = "8dp"
+      android:id = "@+id/response"
+      android:visibility = "gone"
+      android:gravity = "center"
+      android:textSize = "14sp"
+    />
+  </LinearLayout>
+  <!--Options-->
+  <LinearLayout
+    android:background = "@drawable/border_top"
+    android:layout_height = "match_parent"
+    android:layout_width = "match_parent"
+    android:orientation = "horizontal"
+    android:padding = "0dp"
+  >
+    <!--Save button-->
+    <androidx.appcompat.widget.AppCompatButton
+      android:fontFamily = "@font/opensans_semibold"
+      android:background = "@color/transparent"
+      android:textColor = "@color/primary_900"
+      android:layout_height = "match_parent"
+      android:paddingHorizontal = "6dp"
+      android:paddingVertical = "14dp"
+      android:textAllCaps = "false"
+      android:layout_width = "0dp"
+      android:id = "@+id/validate"
+      android:text = "@string/ok"
+      android:layout_weight = "1"
+      android:gravity = "center"
+      android:textSize = "15sp"
+    />
+  </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,433 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--Main screen-->
+<LinearLayout
+  xmlns:android = "http://schemas.android.com/apk/res/android"
+  xmlns:tools = "http://schemas.android.com/tools"
+  android:background = "@color/neutral_1"
+  android:layout_height = "match_parent"
+  android:layout_width = "match_parent"
+  android:orientation = "vertical"
+  android:id = "@+id/main"
+>
+  <!--Home screen-->
+  <LinearLayout
+    android:layout_height = "wrap_content"
+    android:layout_width = "match_parent"
+    android:orientation = "vertical"
+    android:id = "@+id/homeScreen"
+    android:visibility = "visible"
+  >
+    <!--Header-->
+    <RelativeLayout
+      android:background = "@color/primary_800"
+      android:layout_height = "wrap_content"
+      android:layout_width = "match_parent"
+      android:paddingHorizontal = "8dp"
+      android:paddingVertical = "8dp"
+      android:elevation = "8dp"
+    >
+      <!--Home-->
+      <ImageView
+        android:layout_alignParentStart = "true"
+        android:layout_centerVertical = "true"
+        tools:ignore = "ContentDescription"
+        android:layout_height = "20dp"
+        android:src = "@drawable/home"
+        android:layout_width = "20dp"
+        android:id = "@+id/landing"
+      />
+      <!--Title-->
+      <TextView
+        android:layout_toStartOf = "@id/homeSettings"
+        android:fontFamily = "@font/opensans_bold"
+        android:layout_height = "wrap_content"
+        android:textColor = "@color/neutral_1"
+        android:layout_toEndOf = "@id/landing"
+        android:layout_width = "wrap_content"
+        android:layout_marginStart = "6dp"
+        android:text = "@string/home"
+        android:textSize = "15sp"
+      />
+      <!--Settings-->
+      <ImageView
+        android:layout_alignParentEnd = "true"
+        android:layout_centerVertical = "true"
+        tools:ignore = "ContentDescription"
+        android:src = "@drawable/settings"
+        android:id = "@+id/homeSettings"
+        android:layout_height = "20dp"
+        android:layout_width = "20dp"
+      />
+    </RelativeLayout>
+    <!--Scrollable-->
+    <ScrollView
+      android:layout_height = "match_parent"
+      android:layout_width = "match_parent"
+    >
+      <!--Content-->
+      <LinearLayout
+        android:background = "@color/neutral_1"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:id = "@+id/starter"
+        android:gravity = "center"
+        android:padding = "24dp"
+      >
+        <!--Scan icon-->
+        <ImageView
+          android:layout_marginBottom = "24dp"
+          tools:ignore = "ContentDescription"
+          android:layout_height = "148dp"
+          android:layout_width = "148dp"
+          android:src = "@drawable/scan"
+        />
+        <!--Title-->
+        <TextView
+          android:fontFamily = "@font/opensans_semibold"
+          android:text = "@string/tutorial_title"
+          android:textColor = "@color/neutral_10"
+          android:layout_height = "wrap_content"
+          android:layout_width = "wrap_content"
+          android:layout_marginBottom = "6dp"
+          android:textSize = "15sp"
+        />
+        <!--Description-->
+        <TextView
+          android:fontFamily = "@font/opensans_regular"
+          android:text = "@string/tutorial_message"
+          android:textColor = "@color/neutral_9"
+          android:layout_height = "wrap_content"
+          android:layout_width = "wrap_content"
+          android:layout_marginBottom = "24dp"
+          android:gravity = "center"
+          android:textSize = "13sp"
+        />
+        <!--Launcher button-->
+        <androidx.appcompat.widget.AppCompatButton
+          android:fontFamily = "@font/opensans_regular"
+          android:drawableStart = "@drawable/camera"
+          android:background = "@drawable/button_bg"
+          android:drawableTint = "@color/neutral_1"
+          android:textColor = "@color/neutral_1"
+          android:text = "@string/start_camera"
+          tools:ignore = "TouchTargetSizeCheck"
+          android:layout_width = "wrap_content"
+          android:layout_marginBottom = "32dp"
+          android:paddingHorizontal = "16dp"
+          android:id = "@+id/homeLauncher"
+          android:paddingVertical = "8dp"
+          android:drawablePadding = "8dp"
+          android:layout_height = "38dp"
+          android:textAllCaps = "false"
+          android:gravity = "center"
+          android:textSize = "14sp"
+        />
+        <!--Loader button-->
+        <androidx.appcompat.widget.AppCompatButton
+          android:fontFamily = "@font/opensans_regular"
+          android:drawableStart = "@drawable/gallery"
+          android:background = "@drawable/button_bg"
+          android:drawableTint = "@color/neutral_1"
+          android:textColor = "@color/neutral_1"
+          tools:ignore = "TouchTargetSizeCheck"
+          android:layout_width = "wrap_content"
+          android:layout_marginBottom = "6dp"
+          android:text = "@string/load_image"
+          android:paddingHorizontal = "22dp"
+          android:drawablePadding = "10dp"
+          android:paddingVertical = "8dp"
+          android:layout_height = "38dp"
+          android:textAllCaps = "false"
+          android:id = "@+id/picker"
+          android:gravity = "center"
+          android:textSize = "14sp"
+        />
+      </LinearLayout>
+    </ScrollView>
+  </LinearLayout>
+  <!--Upload screen-->
+  <LinearLayout
+    android:layout_height = "wrap_content"
+    android:layout_width = "match_parent"
+    android:focusableInTouchMode = "true"
+    android:orientation = "vertical"
+    android:id = "@+id/uploadScreen"
+    android:visibility = "gone"
+    android:focusable = "true"
+  >
+    <!--Header-->
+    <RelativeLayout
+      android:background = "@color/primary_800"
+      android:layout_height = "wrap_content"
+      android:layout_width = "match_parent"
+      android:paddingHorizontal = "8dp"
+      android:paddingVertical = "8dp"
+      android:elevation = "8dp"
+    >
+      <!--Back arrow-->
+      <ImageView
+        android:layout_alignParentStart = "true"
+        android:layout_centerVertical = "true"
+        tools:ignore = "ContentDescription"
+        android:layout_height = "20dp"
+        android:src = "@drawable/back"
+        android:layout_width = "20dp"
+        android:id = "@+id/backArrow"
+      />
+      <!--Title-->
+      <TextView
+        android:layout_toStartOf = "@id/uploadSettings"
+        android:fontFamily = "@font/opensans_bold"
+        android:layout_toEndOf = "@id/backArrow"
+        android:layout_height = "wrap_content"
+        android:textColor = "@color/neutral_1"
+        android:layout_width = "wrap_content"
+        android:layout_marginStart = "6dp"
+        android:text = "@string/transfer"
+        tools:ignore = "RelativeOverlap"
+        android:textSize = "15sp"
+      />
+      <!--Setting-->
+      <ImageView
+        android:layout_alignParentEnd = "true"
+        android:layout_centerVertical = "true"
+        tools:ignore = "ContentDescription"
+        android:src = "@drawable/settings"
+        android:id = "@+id/uploadSettings"
+        android:layout_height = "20dp"
+        android:layout_width = "20dp"
+      />
+    </RelativeLayout>
+    <!--Scrollable-->
+    <ScrollView
+      android:layout_height = "match_parent"
+      android:layout_width = "match_parent"
+    >
+      <!--Content-->
+      <LinearLayout
+        android:background = "@color/neutral_2"
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:orientation = "vertical"
+        android:gravity = "center"
+        android:padding = "24dp"
+      >
+        <!--Capture-->
+        <RelativeLayout
+          android:background = "@drawable/capture_bg"
+          android:layout_width = "match_parent"
+          android:layout_marginBottom = "8dp"
+          android:orientation = "horizontal"
+          android:layout_height = "164dp"
+          android:paddingVertical = "2dp"
+          android:paddingStart = "2dp"
+          android:paddingEnd = "2.5dp"
+          android:elevation = "3dp"
+        >
+          <!--Image-->
+          <ImageView
+            tools:ignore = "ContentDescription,ImageContrastCheck"
+            android:layout_height = "match_parent"
+            android:layout_centerInParent = "true"
+            android:layout_width = "match_parent"
+            android:adjustViewBounds = "true"
+            android:id = "@+id/capturedImage"
+            android:scaleType = "centerCrop"
+          />
+        </RelativeLayout>
+        <!--Capture resolution-->
+        <TextView
+          android:fontFamily = "@font/opensans_regular"
+          android:textColor = "@color/neutral_9"
+          android:layout_height = "wrap_content"
+          android:layout_width = "wrap_content"
+          android:text = "@string/resolution"
+          android:id = "@+id/resolutionText"
+          android:visibility = "visible"
+          android:textSize = "14sp"
+        />
+        <!--Weight-->
+        <RelativeLayout
+          android:background = "@drawable/border_bottom"
+          android:layout_height = "wrap_content"
+          android:layout_width = "match_parent"
+          android:paddingHorizontal = "0dp"
+          android:layout_marginTop = "24dp"
+          android:paddingBottom = "10dp"
+          android:paddingTop = "0dp"
+        >
+          <!--Tag-->
+          <TextView
+            android:fontFamily = "@font/opensans_regular"
+            android:layout_alignParentStart = "true"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "@string/weight"
+            android:textSize = "13sp"
+          />
+          <!--Value-->
+          <TextView
+            android:fontFamily = "@font/opensans_semibold"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentEnd = "true"
+            android:layout_width = "wrap_content"
+            android:text = "@string/weight_value"
+            tools:ignore = "RelativeOverlap"
+            android:id = "@+id/weightText"
+            android:textSize = "13sp"
+          />
+        </RelativeLayout>
+        <!--Date-->
+        <RelativeLayout
+          android:background = "@drawable/border_bottom"
+          android:layout_height = "wrap_content"
+          android:layout_width = "match_parent"
+          android:paddingHorizontal = "0dp"
+          android:paddingVertical = "10dp"
+        >
+          <!--Tag-->
+          <TextView
+            android:fontFamily = "@font/opensans_regular"
+            android:layout_alignParentStart = "true"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "@string/date"
+            android:textSize = "13sp"
+          />
+          <!--Value-->
+          <TextView
+            android:fontFamily = "@font/opensans_semibold"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentEnd = "true"
+            android:layout_width = "wrap_content"
+            android:text = "@string/date_value"
+            tools:ignore = "RelativeOverlap"
+            android:id = "@+id/dateText"
+            android:textSize = "13sp"
+          />
+        </RelativeLayout>
+        <!--Time-->
+        <RelativeLayout
+          android:background = "@drawable/border_bottom"
+          android:layout_height = "wrap_content"
+          android:layout_width = "match_parent"
+          android:paddingHorizontal = "0dp"
+          android:paddingVertical = "10dp"
+        >
+          <!--Tag-->
+          <TextView
+            android:fontFamily = "@font/opensans_regular"
+            android:layout_alignParentStart = "true"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "@string/time"
+            android:textSize = "13sp"
+          />
+          <!--Value-->
+          <TextView
+            android:fontFamily = "@font/opensans_semibold"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_alignParentEnd = "true"
+            android:layout_width = "wrap_content"
+            android:text = "@string/time_value"
+            tools:ignore = "RelativeOverlap"
+            android:id = "@+id/timeText"
+            android:textSize = "13sp"
+          />
+        </RelativeLayout>
+        <!--Description-->
+        <LinearLayout
+          android:layout_height = "wrap_content"
+          android:layout_width = "match_parent"
+          android:layout_marginBottom = "24dp"
+          android:orientation = "vertical"
+          android:paddingTop = "10dp"
+        >
+          <!--Tag-->
+          <TextView
+            android:fontFamily = "@font/opensans_regular"
+            android:textColor = "@color/neutral_10"
+            android:layout_height = "wrap_content"
+            android:layout_width = "wrap_content"
+            android:text = "@string/description"
+            android:textSize = "13sp"
+          />
+          <!--Text area-->
+          <EditText
+            tools:ignore = "LabelFor,SpeakableTextPresentCheck,VisualLintTextFieldSize"
+            android:textCursorDrawable = "@drawable/cursor"
+            android:fontFamily = "@font/opensans_regular"
+            android:background = "@drawable/input_bg"
+            android:textColor = "@color/primary_900"
+            android:layout_width = "match_parent"
+            android:autofillHints = "Misconduct"
+            android:inputType = "textMultiLine"
+            android:layout_marginTop = "6dp"
+            android:id = "@+id/description"
+            android:layout_height = "96dp"
+            android:textSize = "14sp"
+            android:padding = "12dp"
+            android:gravity = "top"
+            android:maxLines = "10"
+            android:lines = "10"
+          />
+        </LinearLayout>
+        <!--Options-->
+        <RelativeLayout
+          android:layout_height = "wrap_content"
+          android:layout_width = "match_parent"
+          android:orientation = "horizontal"
+          android:padding = "0dp"
+        >
+          <!--Launcher button-->
+          <androidx.appcompat.widget.AppCompatButton
+            android:fontFamily = "@font/opensans_regular"
+            android:drawableStart = "@drawable/gallery"
+            android:background = "@drawable/button_bg"
+            android:drawableTint = "@color/neutral_1"
+            android:layout_alignParentStart = "true"
+            android:text = "@string/another_image"
+            android:textColor = "@color/neutral_1"
+            tools:ignore = "TouchTargetSizeCheck"
+            android:layout_width = "wrap_content"
+            android:paddingHorizontal = "14dp"
+            android:id = "@+id/uploadLauncher"
+            android:drawablePadding = "6dp"
+            android:paddingVertical = "6dp"
+            android:layout_height = "38dp"
+            android:textAllCaps = "false"
+            android:gravity = "center"
+            android:textSize = "14sp"
+          />
+          <!--Sender button-->
+          <androidx.appcompat.widget.AppCompatButton
+            tools:ignore = "RelativeOverlap,TouchTargetSizeCheck"
+            android:fontFamily = "@font/opensans_regular"
+            android:background = "@drawable/button_bg"
+            android:drawableTint = "@color/neutral_1"
+            android:drawableStart = "@drawable/send"
+            android:layout_alignParentEnd = "true"
+            android:textColor = "@color/neutral_1"
+            android:layout_width = "wrap_content"
+            android:paddingHorizontal = "24dp"
+            android:paddingVertical = "6dp"
+            android:drawablePadding = "8dp"
+            android:layout_height = "38dp"
+            android:textAllCaps = "false"
+            android:text = "@string/send"
+            android:id = "@+id/upload"
+            android:gravity = "center"
+            android:textSize = "14sp"
+          />
+        </RelativeLayout>
+      </LinearLayout>
+    </ScrollView>
+  </LinearLayout>
+</LinearLayout>

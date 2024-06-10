@@ -1,0 +1,5 @@
+<?xml version = "1.0" encoding = "utf-8"?>
+<!--Launcher background-->
+<resources>
+  <color name = "launcher_background">@color/primary_400</color>
+</resources>
