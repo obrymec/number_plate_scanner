@@ -19,11 +19,11 @@ software.
 
 ## Access links <a id = "links"></a>
 The project distribution version can be accessible through the link below :
-- https://gitlab.com/obrymec/number_plate_scanner/-/blob/master/dist/numberplate_scanner_v0.1.4b10.apk?ref_type=heads
+- https://github.com/obrymec/number_plate_scanner/blob/main/dist/numberplate_scanner_v0.1.4b10.apk
 
 ## Reference <a id = "ref"></a>
 The project can be found via the link below :
-- https://github.com/obrymec/number_plate_scanner
+- https://gitlab.com/obrymec/number_plate_scanner
 
 ## Final result <a id = "result"></a>
 This is the final result of the project :<br/><br/>
@@ -54,7 +54,7 @@ you can visit the following links below :
 
 ## Sources code cloning <a id = "cloning"></a>
 ```sh
-git clone git@gitlab.com:obrymec/number_plate_scanner.git number_plate_scanner/
+git clone git@github.com:obrymec/number_plate_scanner.git number_plate_scanner/
 ```
 
 Enjoy :)
